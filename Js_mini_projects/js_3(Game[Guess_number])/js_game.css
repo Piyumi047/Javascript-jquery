@@ -1,0 +1,55 @@
+.box{
+    margin-left: 450px;
+    margin-top: -500px;
+    background-color: aliceblue;
+    border: 1px solid ;
+    height: 200px;
+    width: 400px;
+    padding: 50px;
+    z-index: 100000px;
+    opacity: 10px;
+    position: relative;
+  
+}
+
+#mainbody{
+    width: 300px;
+    height: 200px;
+    background:purple;
+    animation: mymove 5s infinite;
+  }
+  
+
+@keyframes mymove {
+    from {background-color: plum;}
+    to {background-color: blue;}
+  }
+
+
+  #mainbody  #div1 {animation-timing-function: linear;}
+  #mainbody #div2 {animation-timing-function: ease;}
+  #mainbody #div3 {animation-timing-function: ease-in;}
+  #mainbody #div4 {animation-timing-function: ease-out;}
+  #mainbody #div5 {animation-timing-function: ease-in-out;}
+  
+
+
+#mainbody .animate{
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    animation: myline 5s infinite;
+    margin-bottom: 5px;
+}
+
+@keyframes myline {
+    from {left: -200px;}
+    to {left: 1600px;}
+  }
+
+  
+@keyframes myline {
+    to {left: -200px;}
+    from {left: 1600px;}
+  }
