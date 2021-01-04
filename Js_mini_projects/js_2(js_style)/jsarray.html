@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var msg= new Array();
+
+        msg[0]="hello";
+        msg[1]="friends";
+
+        var chat=["Goodmorning","Go to office","good afternoon"]
+        console.log(chat);
+
+        //add new element 
+        chat.push("Good night");
+
+        //delete element
+        //array name.splice(from(index),number ofelements)
+        chat.splice(1,1);
+
+        //add element to specific index
+        chat.splice(0,0,"HI"); // add one element to index zero
+    </script>
+</body>
+</html>
