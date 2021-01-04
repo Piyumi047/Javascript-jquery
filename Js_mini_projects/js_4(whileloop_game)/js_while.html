@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS while game</title>
+</head>
+
+
+<style>
+     .box{
+        height: 200px; 
+        width: 400px; 
+        margin: 150px;
+        border: 1px solid black; 
+        padding: 10px;
+     }
+
+</style>
+<body>
+
+    <div  class="box">
+    <p>Which number is in your mind ?</p>
+    
+    <select name="number" id="get">
+        <option >1</option>
+        <option >2</option>
+        <option >3</option>
+        <option >4</option>
+        <option >5</option>
+        <option >6</option>
+        <option >7</option>
+        <option >8</option>
+        <option >9</option>
+        <option >10</option>
+        
+    </select>
+
+    <button id="guess">Quess ...!</button>
+   </div>
+    <script type="text/javascript">
+       document.getElementById("guess").onclick=function(){
+           var mynumber=document.getElementById("get").value;
+
+           var numberofguess=1;
+           
+           var gotit=false;
+
+           while(gotit==false){
+                var guess=Math.random();
+                guess=guess*10;
+                guess=Math.floor(guess);
+
+                if(guess==mynumber){
+                    gotit=true;
+
+                    alert("Got it ,Your number is "+guess+"! \n It look in "+numberofguess+ " guesses" );
+
+                }else{
+                    numberofguess=numberofguess+1;
+                }
+           }
+
+       }
+
+    </script>
+</body>
+</html>
