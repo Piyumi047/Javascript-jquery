@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body id="bd">
+    <button id="btn3">Change_background</button>
+    <p id="text">WELCOME  </p>
+    <button id="btn1">Change_text</button>
+    <button id="btn4">Change_size</button>
+    <button id="btn5">Hide</button>
+    <button id="btn6">change_color</button>
+    <button id="btn2">ADD</button>
+    <p id="empty"></p>
+
+    <script type="text/JavaScript">
+
+     //  alert("WELCOME..............!");
+     document.getElementById("btn1").onclick=function () {
+        document.getElementById("text").innerHTML= document.getElementById("text").innerHTML +"Dulanjali";
+     }
+
+     document.getElementById("btn2").onclick=function () {
+        document.getElementById("empty").innerHTML= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ea ipsam iusto aspernatur nihil quo quis est maxime harum possimus atque blanditiis inventore eos recusandae delectus, magnam sed numquam accusamus?";
+     }
+
+     document.getElementById("btn3").onclick=function () {
+        document.getElementById("bd").style.background= "blue";
+     }
+
+     document.getElementById("btn4").onclick=function () {
+        document.getElementById("text").style.fontSize= "50px";
+     }
+
+     document.getElementById("btn5").onclick=function () {
+        document.getElementById("text").style.display= "none";
+     }
+
+     document.getElementById("btn6").onclick=function () {
+        document.getElementById("text").style.color= "red";
+     }
+
+     
+    </script>
+</body>
+</html>
