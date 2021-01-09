@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js_practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<script type="text/javascript"> 
+    $(document).ready(function(){
+        $("#topbar1").click(function(){
+            $("#content1").slideDown(1000);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#topbar2").click(function(){
+            $("#content2").slideUp(1000);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#topbar3").click(function(){
+            $("#content3").slideToggle(1000);
+        });
+    });
+
+</script>
+
+<style>
+
+    #topbar1,#content1,#topbar2,#content2,#topbar3,#content3{
+        padding: 5px;
+        text-align: center;
+        background-color: blueviolet;
+        border: 1px solid black;
+        color: white;
+    }
+
+    #content1,#content3{
+        padding: 80px;
+        display: none;
+    }
+
+
+    #content2{
+        padding: 80px;
+       
+    }
+</style>
+<body>
+    <div id="topbar1">Top bar 1</div>
+    <div id="content1">Content of top bar 1</div>
+
+    <br><br><br>
+
+    <div id="topbar2">Top bar 2</div>
+    <div id="content2">Content of top bar 2</div>
+
+    <br><br><br>
+
+    <div id="topbar3">Top bar 3</div>
+    <div id="content3">Content of top bar 3</div>
+    
+</body>
+</html>
