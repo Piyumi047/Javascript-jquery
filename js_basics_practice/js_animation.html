@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<script>
+      $(document).ready(function(){
+          $("#btn1").click(function(){
+              $("#square1").animate({left: '800px'}, 1000);
+          });
+      });
+
+      $(document).ready(function(){
+          $("#btn2").click(function(){
+              $("#square2").animate({left: '800px', opacity:0.25, height:"toggle"}, 1000);
+          });
+      });
+
+
+      $(document).ready(function(){
+          $("#btn3").click(function(){
+             var square = $("#square3");
+             square.animate({height:'500px',opacity:'0.5'}, 1000);
+             square.animate({width:'500px',opacity:'0.9'}, 500);
+             square.animate({height:'200px',opacity:'0.5'}, 1000);
+             square.animate({width:'200px',opacity:'0.9'}, 500);
+          });
+      });
+</script>
+    
+<style>
+     #square1, #square2, #square3{
+         background-color:blue;
+         height: 200px;
+         width: 200px;
+         margin: 5px;
+         position: absolute;
+         border: 2px solid black;
+     }
+
+     #square2{
+         background-color: blueviolet;
+     }
+
+     #square3{
+         background-color: rgb(102, 163, 187);
+     }
+</style>
+<body>
+
+    <button id="btn1">Start Animation1</button>
+    
+    <button id="btn2">Start Animation2</button>
+
+    <button id="btn3">Start Animation3</button>
+    <br><br>
+    <div id="square1"></div>
+    <br><br>
+    <div id="square2"></div>
+    <br><br>
+    <div id="square3"></div>
+    
+</body>
+</html>
